@@ -485,23 +485,52 @@ input[type="email"] {
   }
   
   @media (max-width: 768px) {
-   *{
+ *{
     margin: 0;
     padding: 0;
     width: 100%;
    }
 
-.hamburger {
-      display: block;
-}
-  
-.mobile-menu {
-      display: flex;
-    }
+   nav ul{
+    display: none;
+   }
+
+   nav{
+    flex-direction: column;
+   }
+
+   div.right-side{
+    padding-top: 3rem;
+    text-align: center;
+   }
+
+   .hero-content{
+    flex-direction: column;
+    text-align: center;
+   }
+
+   .icons{
+    display: flex;
+    overflow-x: x;
+    -webkit-overflow-scrolling: touch;
+   }
+
+   .icons::-webkit-scrollbar{
+    display: none;
+   }
+
+   .membership,
+   .nationals,
+   .clubs{
+    min-width: 100vw;
+    scroll-snap-align: start;
+    flex: none;
+   }
+
   }
   
-  /* Toggle menu visibility when the hidden class is removed */
+  /* Toggle menu visibility when the hidden class is removed 
 .hidden {
     display: none;
   }
-  
+  */
