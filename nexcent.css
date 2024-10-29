@@ -511,7 +511,8 @@ input[type="email"] {
 
    .icons{
     display: flex;
-    overflow-x: x;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
    }
 
