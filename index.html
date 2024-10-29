@@ -6,8 +6,9 @@
     <title>Nexcent-Landing-Page</title>
     <link rel="stylesheet" href="nexcent.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Montserrat:ital,wght@0,500;1,500&family=Outfit:wght@100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Montserrat:ital,wght@0,500;1,500&family=Outfit:wght@100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <script src="nexcent.js" defer></script>
 </head>
 <body>
     <header class="hero">
@@ -27,6 +28,23 @@
              <a href="#" class="sign-up">Sign-up</a>
            </div>
         </nav>
+        
+        <div class="hamburger-menu" id="hamburger-menu">
+            <div class="navbar">
+                <button class="hamburger" onclick="toggleMenu()">☰</button>
+            </div>
+              
+            <nav id="mobile-menu" class="mobile-menu hidden">
+                <ul>
+                  <li><a href="#section1">Home</a></li>
+                  <li><a href="#section2">Services</a></li>
+                  <li><a href="#section3">Feature</a></li>
+                  <li><a href="#section4">Product</a></li>
+                  <li><a href="#section5">Testimonial</a></li>
+                  <li><a href="#section6"></a></li>
+                </ul>
+            </nav>
+        </div>
 
         <div class="hero-content">
             <div class="hero-text">
@@ -35,7 +53,7 @@
                 <a href="#" class="register">Register</a>
             </div>
             <div class="hero-image">
-             <img src="./images/Illustration.png" alt="Illustration"><!--image for desktop  view-->
+             <img src="./images/Illustration.png" alt="Illustration" class="Illustration"><!--image for desktop  view-->
             </div>
         </div>
     </header>    
@@ -216,49 +234,50 @@
         </div>
     </section>
 
-    <footer style="background-color: hsla(200, 19%, 18%, 1);">
-        <div class="company-info">
-            <div class="footer-logo">
-                <img src="./images/footer-logo.png" alt="logo unavailable">
-            </div>
-            <div class="copyright">
-                <p>Copyright © 2024 Nexcent ltd.</p>
-                <p>All rights reserved</p>
-            </div>
-            <div class="social-links">
-                <img src="./images/Social Icons (2).png" alt="instagram icon unavailable">
-                <img src="./images/Social Icons (3).png" alt="icon unavailable">
-                <img src="./images/Social Icons.png" alt="icon unavailable">
-                <img src="./images/Social Icons (4).png" alt="icon unavailable">
-            </div>
-        </div>
-
-        <div class="links">
-            <h4>Company</h4>
-            <ul>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact us</a></li>
-                <li><a href="#">Pricing</a></li>
-                <li><a href="#">Testimonials</a></li>
-            </ul>
-        </div>
-
-        <div class="links">
-            <h4>Support</h4>
-            <ul>
-                <li><a href="#">Help center</a></li>
-                <li><a href="#">Terms of service</a></li>
-                <li><a href="#">Legal</a></li>
-                <li><a href="#">Privacy policy</a></li>
-                <li><a href="#">Status</a></li>
-            </ul>
-        </div>
-
-        <div class="input">
-            <h4>Stay up to date</h4>
-            <input type="email" placeholder="Your email address">
-        </div>
-    </footer>
 </body>
+
+<footer style="background-color: hsla(200, 19%, 18%, 1);">
+    <div class="company-info">
+        <div class="footer-logo">
+            <img src="./images/footer-logo.png" alt="logo unavailable">
+        </div>
+        <div class="copyright">
+            <p>Copyright © 2024 Nexcent ltd.</p>
+            <p>All rights reserved</p>
+        </div>
+        <div class="social-links">
+            <img src="./images/Social Icons (2).png" alt="instagram icon unavailable">
+            <img src="./images/Social Icons (3).png" alt="icon unavailable">
+            <img src="./images/Social Icons.png" alt="icon unavailable">
+            <img src="./images/Social Icons (4).png" alt="icon unavailable">
+        </div>
+    </div>
+
+    <div class="links">
+        <h4>Company</h4>
+        <ul>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Testimonials</a></li>
+        </ul>
+    </div>
+
+    <div class="links">
+        <h4>Support</h4>
+        <ul>
+            <li><a href="#">Help center</a></li>
+            <li><a href="#">Terms of service</a></li>
+            <li><a href="#">Legal</a></li>
+            <li><a href="#">Privacy policy</a></li>
+            <li><a href="#">Status</a></li>
+        </ul>
+    </div>
+
+    <div class="input">
+        <h4>Stay up to date</h4>
+        <input type="email" placeholder="Your email address">
+    </div>
+</footer>
 </html>
