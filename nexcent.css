@@ -187,13 +187,10 @@ div.achievements-text h2{
     color: hsla(122, 39%, 49%, 1);
 }
 
-div.row-1{
-    display: flex;
-    padding-bottom: 3rem;
-}
-
+div.row-1,
 div.row-2{
     display: flex;
+    padding: 3rem 0;
 }
 
 div#members,
@@ -278,7 +275,7 @@ section.customers{
     padding: 0.3rem 0;
 }
 
-.icons a{
+.icons-2 a{
     font-weight: 600;
     font-size: 1.25rem;
     line-height: 1.75rem;
@@ -445,50 +442,15 @@ input[type="email"] {
     text-decoration: underline;
 }
 
+img{
+    max-width: 21.25rem;
+    height: auto;
+}
 
-
-
-  
-  /* Hamburger button */
-  .hamburger {
-    font-size: 1.5rem;
-    background: none;
-    border: none;
-    cursor: pointer;
-    display: none;
-  }
-  
-  /* Mobile menu styling */
-  .mobile-menu {
-    display: none; /* Hidden by default */
-    flex-direction: column;
-    background-color: hsla(210, 31%, 97%, 1);
-    position: absolute;
-    top: 3rem;
-    right: 0;
-    width: 100%;
-  }
-  
-  .mobile-menu ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .mobile-menu ul li {
-    text-align: center;
-    padding: 1rem;
-  }
-  
-  .mobile-menu ul li a {
-    color: black;
-    text-decoration: none;
-  }
-  
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
  *{
     margin: 0;
     padding: 0;
-    width: 100%;
    }
 
    nav ul{
@@ -507,13 +469,14 @@ input[type="email"] {
    .hero-content{
     flex-direction: column;
     text-align: center;
+    padding: 20px;
    }
 
-   .icons{
+   .icons,
+   .image-section{
     display: flex;
-    overflow-x: scroll;
+    overflow-x: auto;
     scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
    }
 
    .icons::-webkit-scrollbar{
@@ -522,10 +485,46 @@ input[type="email"] {
 
    .membership,
    .nationals,
-   .clubs{
+   .clubs,
+   .image-section img{
     min-width: 100vw;
-    scroll-snap-align: start;
+    scroll-snap-align: center;
     flex: none;
+   }
+
+   .image-section{
+    padding: 20px;
+   }
+
+   section.unlock,
+   section.achievements,
+   section.guideline,
+   section.customers,
+   section.subscribe{
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+   }
+   
+   .row-1,
+   .row-2{
+    flex-direction: column;
+   }
+
+   section.achievements{
+    margin-top: 50px;
+   }
+
+   footer{
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 20px;
+   }
+
+   .flex-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 18px;
    }
 
   }
