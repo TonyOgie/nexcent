@@ -7,12 +7,37 @@
     <link rel="stylesheet" href="nexcent.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Montserrat:ital,wght@0,500;1,500&family=Outfit:wght@100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
     <script src="nexcent.js" defer></script>
 </head>
 <body>
     <header class="hero">
-        <nav>
+        <!--Navbar for smaller screens-->
+        <div class="mobile-view">
+           
+            <img src="./images/Logo.png" alt="logo" class="mobile-logo">
+            <div class="menu-icon" onclick="toggleMenu()">
+                <i class="fas fa-bars" id="hamburger-menu"></i>
+            </div>
+
+            <nav id="mobile-nav" class="mobile-nav">
+                    <a href="#">Home</a>
+                    <a href="#">Service</a>
+                    <a href="#">Feature</a>
+                    <a href="#">Product</a>
+                    <a href="#">Testimonial</a>
+                    <a href="#">FAQ</a>
+            </nav>
+        </div>
+
+        <div class="right-side" id="mobile-view-right-side">
+            <a href="#" class="login">Login</a>
+            <a href="#" class="sign-up">Sign-up</a>
+        </div>
+
+        <!--Navbar for bigger screens-->
+        <nav class="desktop-view">
             <img src="./images/Logo.png" alt="logo">
             <ul class="list">
                 <li><a href="#">Home</a></li>
@@ -28,23 +53,6 @@
              <a href="#" class="sign-up">Sign-up</a>
            </div>
         </nav>
-        
-        <!--<div class="hamburger-menu" id="hamburger-menu">
-            <div class="navbar">
-                <button class="hamburger" onclick="toggleMenu()">☰</button>
-            </div>
-              
-            <nav id="mobile-menu" class="mobile-menu hidden">
-                <ul>
-                  <li><a href="#section1">Home</a></li>
-                  <li><a href="#section2">Services</a></li>
-                  <li><a href="#section3">Feature</a></li>
-                  <li><a href="#section4">Product</a></li>
-                  <li><a href="#section5">Testimonial</a></li>
-                  <li><a href="#section6"></a></li>
-                </ul>
-            </nav>
-        </div>-->
 
         <div class="hero-content">
             <div class="hero-text">
@@ -179,7 +187,7 @@
             <p>Customers who become members or subscribe to our platform are part of an exclusive community that stays ahead in the fast-paced world of Web3. 
                 By joining, they gain access to premium content, expert insights, and early updates on the latest trends and developments. 
                 Whether it's through tailored newsletters, priority support, or exclusive deals, our members are equipped with the tools and knowledge to excel in their fields. 
-                We value our customers' trust and are committed to delivering value that helps them stay competitive and informed every step of the way0.
+                We value our customers' trust and are committed to delivering value that helps them stay competitive and informed every step of the way.
             </p>
             <p>Anthony Ogie</p>
             <p>Gemini Smart Contract Engineer</p>
@@ -191,7 +199,6 @@
              <img src="./images/Logo (4).png" alt="icon unavailable">
              <img src="./images/Logo (5).png" alt="icon unavailable">
              <a href="#" class="link">Meet all Customers &rarr;</a>
-             <div class="arrow"></div>
             </div>
         </div>
     </section>
@@ -251,9 +258,8 @@
             <img src="./images/Social Icons.png" alt="icon unavailable">
             <img src="./images/Social Icons (4).png" alt="icon unavailable">
         </div>
-    </div>
+   </div>
 
-    <div class="flex-container">
         <div class="links">
             <h4>Company</h4>
             <ul>
@@ -275,11 +281,11 @@
                 <li><a href="#">Status</a></li>
             </ul>
         </div>
-    </div>
 
-    <div class="input">
-        <h4>Stay up to date</h4>
-        <input type="email" placeholder="Your email address">
-    </div>
+        <form class="input">
+            <h4>Stay up to date</h4>
+            <input type="email" placeholder="Your email address" name="email">
+            <button class="send-button"><i class="fas fa-paper-plane"></i></button>
+        </form>
 </footer>
 </html>
