@@ -11,7 +11,7 @@
 }
 
 img.mobile-logo{
-    margin-right: 175px;
+    margin-right: 10rem;
 }
 
 .menu-icon{
@@ -172,7 +172,7 @@ section.unlock{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 9rem;
+    padding: 9rem;
 }
 
 .unlock-text h2{
@@ -180,6 +180,7 @@ section.unlock{
     font-size: 2rem;
     line-height: 2.8rem;
     color: hsla(0, 0%, 30%, 1);
+    padding-bottom: 1rem;
 }
 
 .unlock-text p,
@@ -188,7 +189,7 @@ section.unlock{
     font-size: 1rem;
     line-height: 1.25rem;
     color: hsla(0, 0%, 44%, 1);
-    margin-bottom: 1.3rem;
+    padding-bottom: 3rem;
 }
 
 .learn-more{
@@ -266,7 +267,7 @@ section.guideline{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 3.1rem 9rem 0 9rem;
+    padding: 3rem 9rem;
 }
 
 .guideline-text h2{
@@ -323,7 +324,7 @@ a.link{
 }
 
 section.updates{
-   margin: 6.25rem 0; 
+   margin: 3rem 0 1rem 0; 
 }
 
 section.updates h2,
@@ -603,7 +604,7 @@ img{
 
    .mobile-view{
     display: flex;
-    justify-content: space-between;
+    padding: 1rem;
     align-items: center;
    }
 
