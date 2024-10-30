@@ -496,14 +496,14 @@ img{
 .mobile-nav {
     display: none;
     flex-direction: column;
-    position: absolute;
     top: 50px;
     right: 0;
     background-color: hsla(210, 31%, 97%, 1);
     width: 100%;
-    max-width: 200px;
+    max-width: 1400px;
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
 }
+
 
 .mobile-nav a {
     color: hsla(122, 39%, 49%, 1);
